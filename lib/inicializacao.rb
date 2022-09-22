@@ -7,6 +7,9 @@ class Inicializacao
 #		print "."
 #		end
 #		puts "."
+
+		=begin
+		
 puts "	               .'         `\			    """
 puts "	              /   _         \			    """""
 puts "	 .-""-.       |  (O\.--.-.-/O)          .-""-.      """""""
@@ -33,6 +36,13 @@ puts "	         \(          .'   '.         )/             "
 puts "	   	       '.(__(__.-'       '.__)__).'	    "
 
 puts "-----------------------------------------------------"
+			=end
+		File.open(File.expand_path('../../ascii/urso.txt' , __FILE__), 'r') do |arq| #Random.rand(1..10)    "../" < volta uma
+			while line =  arq.gets
+				puts line
+			end
+		end
+		
 		sleep 10
 		system('cls')
 	end
